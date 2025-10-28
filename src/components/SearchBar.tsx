@@ -24,7 +24,7 @@ const SearchBar = ({ onSearch, isLoading }: SearchBarProps) => {
     <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto">
       <div className="flex flex-col sm:flex-row gap-3">
         <Select value={searchType} onValueChange={(value: 'title' | 'author') => setSearchType(value)}>
-          <SelectTrigger className="w-full sm:w-[140px] bg-card border-input">
+          <SelectTrigger className="w-full sm:w-[140px] bg-card border-input text-foreground">
             <SelectValue placeholder="Search by" />
           </SelectTrigger>
           <SelectContent>
@@ -39,7 +39,7 @@ const SearchBar = ({ onSearch, isLoading }: SearchBarProps) => {
             placeholder={`Search for books by ${searchType}...`}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 bg-card border-input"
+            className="flex-1 bg-card border-input text-foreground"
             disabled={isLoading}
           />
           <Button 
