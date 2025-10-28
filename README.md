@@ -264,4 +264,4 @@ This project is created as an educational demonstration.
 
 ---
 
-**Built with ❤️ for Alex and book lovers everywhere**
+**Built for Alex and book lovers everywhere**
